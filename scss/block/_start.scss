@@ -1,0 +1,36 @@
+.start {
+  padding-bottom: 100px;
+}
+.start_box{
+display: flex;
+align-items: center;
+}
+.start__title {
+  @include title;
+  margin-bottom: 40px;
+  max-width: 445px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.start__form{
+    max-width: 445px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero__input{
+    max-width: 445px;
+}
+@media screen and (max-width:800px) {
+  .start_box{
+flex-direction: column;
+  }
+ 
+  .start__title{
+    font-size: 32px;
+  }
+  .hero__input{
+    padding-right: 27px;
+    max-width: 100%;
+  }
+}

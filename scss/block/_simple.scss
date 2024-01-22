@@ -1,0 +1,36 @@
+.simple {
+  padding-bottom: 100px;
+}
+.simple__title {
+  color: #36536b;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: -0.138px;
+  margin-bottom: 16px;
+}
+.simple__text {
+  @include text;
+}
+.simple__card_box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(223px, 1fr));
+}
+.simple__card {
+  max-width: 223px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 48px;
+  padding-left: 20px;
+  &::before {
+    content: "";
+    width: 88px;
+    height: 88px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(../../img/simple.svg);
+    margin-bottom: 32px;
+  }
+}

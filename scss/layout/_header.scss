@@ -1,0 +1,36 @@
+.dote{
+    background-repeat: no-repeat;
+    background-image: url(../../img/headBg.svg);
+    background-position: right top;
+   
+}
+
+.header{
+    padding-top: 40px;
+}
+.header__link{
+    @include text;
+}
+.header__nav{
+    display: flex;
+    align-items: center;
+}
+.header__list{
+    display: flex;
+    gap: 40px;
+    margin-left: 60px;
+}
+.header__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__btn{
+    @include btn;
+ 
+}
+@media screen and (max-width:768px) {
+    .header__list{
+        display: none;
+    }
+}
